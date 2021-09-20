@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "깃허브 블로그 테스트"
 date:   2021-09-20 23:55:27 +0900
 categories: jekyll update
 ---
