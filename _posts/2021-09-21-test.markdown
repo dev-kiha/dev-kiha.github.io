@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "깃허브 블로그 테스트"
+title:  "자바 필수 유틸리티"
 date:   2021-09-21 23:45:27 +0900
 categories: jekyll update
 ---
