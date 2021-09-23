@@ -1,32 +1,47 @@
 ---
 layout: post
-title:  "자바프로그래밍 필수 유틸리티"
+title:  "multipart filter"
 date:   2021-09-21 23:45:27 +0900
-categories: jekyll update
+categories: java
 ---
 
-자바프로그래밍 필수 유틸리티
+전자정부프레임워크에서 XSS방지를 하려면 간단하게 HtmlTagFilter를 적용하면 된다.
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+하지만 해당 필터는 **multipart form**에서는 적용 안된다는게 함정
 
-Jekyll requires blog post files to be named according to the following format:
+그래서 multipart filter를 적용해야 multipart form에서도 XSS 방지를 적용할수 있다.
 
-`YEAR-MONTH-DAY-title.MARKUP`
+간단히 multipartfilter를 필터부분에 적용해주면 된다.
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+```jsx
+//web.xml
+<filter>
+    <filter-name>multipartFilter</filter-name>
+    <filter-class>
+        org.springframework.web.multipart.support.MultipartFilter
+    </filter-class>
+    <init-param>
+        <param-name>multipartResolverBeanName</param-name>
+        <param-value>multipartResolver</param-value>
+    </init-param>
+</filter>
+ 
+<filter-mapping>
+    <filter-name>multipartFilter</filter-name>
+    <url-pattern>*.do</url-pattern>
+</filter-mapping>
+```
 
-Jekyll also offers powerful support for code snippets:
+해당 multipart filter를 추가했다고 해서 기존 xss 필터를 빼면 동작하지 않는다.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+그리고 적용 후 글자가 깨지는 현상이 있을수도 있으니 encoding filter 를 적절한곳게 같이 작성해줘야한다.
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+xssEscapeServletFilter
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+deviceResolverRequestFilter
+
+responseHeaderFilter
+
+springSecurityFilterChain
+
+contextConfigLocation
