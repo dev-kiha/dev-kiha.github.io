@@ -6,8 +6,8 @@ categories: git
 ---
 방화벽 문제 확인
 
-1. 제어판 → 프로그램 → windows 기능 켜기/끄기 →  텔넷 클라이언트 체크
-2. `CMD` → TELNET [github.com](http://github.com) 80 (github.com 에 80 port로 접근가능한지)
+1. `제어판` → `프로그램` → `windows 기능 켜기/끄기` →  `텔넷 클라이언트 체크`
+2. `CMD` → `TELNET [github.com](http://github.com) 80` (github.com 에 80 port로 접근가능한지)
 3. 정상적으로 통신됨 → 방화벽 문제X
 
 `gitbash`가 아닌 윈도우 `CMD`로 git clone
