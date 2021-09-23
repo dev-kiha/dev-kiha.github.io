@@ -1,29 +1,20 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "git clone이 되지 않음 (clone into... 에서 hang)"
 date:   2021-09-19 23:57:27 +0900
-categories: python
+categories: git
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+방화벽 문제 확인
 
-Jekyll requires blog post files to be named according to the following format:
+1. 제어판 → 프로그램 → windows 기능 켜기/끄기 →  텔넷 클라이언트 체크
+2. `CMD` → TELNET [github.com](http://github.com) 80 (github.com 에 80 port로 접근가능한지)
+3. 정상적으로 통신됨 → 방화벽 문제X
 
-`YEAR-MONTH-DAY-title.MARKUP`
+`gitbash`가 아닌 윈도우 `CMD`로 git clone
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+1. 해당폴더 접근 → git clone
+2. 정상 해결
 
-Jekyll also offers powerful support for code snippets:
+참고 : [www.lainyzine.com] 
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+[www.lainyzine.com]:  [https://www.lainyzine.com/ko/article/git-clone-command/#https-프로토콜로-git-저장소-clone](https://www.lainyzine.com/ko/article/git-clone-command/#https-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C%EB%A1%9C-git-%EC%A0%80%EC%9E%A5%EC%86%8C-clone)
