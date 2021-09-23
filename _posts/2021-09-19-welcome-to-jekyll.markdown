@@ -15,6 +15,6 @@ categories: git
 1. 해당폴더 접근 → git clone
 2. 정상 해결
 
-참고 : [www.lainyzine.com] 
+>참고 : [www.lainyzine.com] 
 
 [www.lainyzine.com]:  [https://www.lainyzine.com/ko/article/git-clone-command/#https-프로토콜로-git-저장소-clone](https://www.lainyzine.com/ko/article/git-clone-command/#https-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C%EB%A1%9C-git-%EC%A0%80%EC%9E%A5%EC%86%8C-clone)
