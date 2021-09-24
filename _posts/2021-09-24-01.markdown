@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "WSL 수동 다운로드"
+date:   2021-09-23 23:45:27 +0900
+categories: linux 
+---
+마이크로소프트 스토어에서 다운로드가 진행되지않아 아래와 같이 진행함
+
+> https://docs.microsoft.com/ko-kr/windows/wsl/install-manual

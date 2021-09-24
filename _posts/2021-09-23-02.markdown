@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "리눅스 su, sudo 명령어 사용법 정리 (root 권한 획득 방법)"
+date:   2021-09-23 23:45:27 +0900
+categories: git 
+---
+> https://withcoding.com/106
