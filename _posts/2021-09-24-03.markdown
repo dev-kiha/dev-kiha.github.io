@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "python에서 엘라스틱 사용하기"
+date:   2021-09-23 23:45:27 +0900
+categories: linux 
+---
+이번 포스팅은 파이썬에서 엘라스틱을
+
+연결해서 데이터를 insert, delete, search 등
+
+다양한 요청을 하는 튜토리얼입니다.
+
+>https://soyoung-new-challenge.tistory.com/72
