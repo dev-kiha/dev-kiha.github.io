@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "윈도우 터미널(Windows Terminal) 설치 및 사용법"
+date:   2021-09-23 23:45:27 +0900
+categories: linux 
+---
+마이크로소프트에서는 지난 2019년 5월에 새로운 가상 터미널 윈도우 터미널(Windows Terminal)를 오픈소스로 공개했습니다. Windows에서 기본적으로 제공되던 명령 프롬프트는 오래되었고 매우 불편합니다. Windows Ternimal은 명령 프롬프트와 PowerShell은 물론 WSL까지 통합된 가상 터미널 애플리케이션입니다.
+
+윈도우 터미널에서는 멀티플 탭은 물론 텍스트 렌더링에 GPU 가속을 지원하고, 다양한 추가 설정이 가능합니다. 또한 이모지, 한자 등도 정상적으로 출력해줍니다. 아직 명령 프롬프트를 사용하고 있다면 꼭 Windows Terminal로 갈아타시는 것을 추천합니다.
+
+> https://docs.microsoft.com/ko-kr/windows/wsl/install-manual
+> 
+> https://www.youtube.com/watch?v=8gw0rXPMMPE&app=desktop
+> 
+> https://www.lainyzine.com/ko/article/how-to-install-windows-terminal-powershell-wsl2/
