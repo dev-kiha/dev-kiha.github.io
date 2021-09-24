@@ -10,3 +10,6 @@ Docker Desktop 사용을 위해서는 wsl2 가 설치되어야함.
 
 > https://docs.microsoft.com/ko-kr/windows/wsl/install-manual
 > https://bebutae.tistory.com/127
+
+아래 링크가 가장 정확함
+> https://tiqndjd12.tistory.com/68
