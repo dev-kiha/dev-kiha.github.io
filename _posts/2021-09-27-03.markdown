@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "Heroku에 오류 H14 (no web processes running)"
+date:   2021-09-23 23:45:27 +0900
+categories: heroku 
+---
+ProcFile을 제거하고 다시 추가해봐야한다.
+~~~
+git rm ProcFile –f
+~~~
+다시 ProcFile을 아래 방법으로 프로젝트에 추가한다.
+
+1. 맞춤법 확인
+2. ProcFile의 콘텐츠 구조
+3. ProcFile에는 확장자가 없어야합니다.
+4. 그 후에 정상적인 git 절차를 수행하면된다
+~~~
+git add .
+git commit –m "add procfile"
+git push heroku master
+~~~

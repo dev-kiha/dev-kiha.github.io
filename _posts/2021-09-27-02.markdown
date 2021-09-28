@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Heroku 로그보기"
+date:   2021-09-23 23:45:27 +0900
+categories: heroku 
+---
+Heroku에 로그인 된 상태에서 Terminal에서 입력한다
+
+>heroku logs -a [앱이름]
+
+기본값은 100 line이며 아래와 같이 추가 옵션을 줄 수 있다.
+> heroku logs -n 1500
