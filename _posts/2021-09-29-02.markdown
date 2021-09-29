@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "nslookup 으로 도메인 ip 조회 하기"
+date:   2021-09-29 23:45:27 +0900
+categories: java, spring 
+---
+nslookup 으로 도메인 ip 조회 하기
+.
+.
+.
+> https://www.sharedit.co.kr/posts/1475
