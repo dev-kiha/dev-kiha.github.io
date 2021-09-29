@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "웹 어플리케이션 배포 위한 패키지 유형과 war, war(exploaed) 차이"
+title:  "토큰 기반 인증에서 Bearer"
 date:   2021-09-28 23:45:27 +0900
 categories: java, spring 
 ---
