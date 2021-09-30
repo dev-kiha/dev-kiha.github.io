@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "오늘 참고하여 공부/정리할 내용들"
+date:   2021-09-30 23:45:27 +0900
+categories: etc 
+---
+https://wikidocs.net/book/922
+https://www.boostcourse.org/opencourse
+https://www.jetbrains.com/help/idea/getting-started.html
+https://github.com/webtutsplus
+https://egovframe.go.kr/home/faqinfo/faqinfoRead.do?menuNo=68&faqId=FAQ_0000000000000761
+https://oingdaddy.tistory.com/345
+https://goddaehee.tistory.com/213
+https://unordinarydays.tistory.com/161
+https://unordinarydays.tistory.com/94?category=221912
+https://unordinarydays.tistory.com/category/To%20be%20Developer/MEAN%20Stack
+https://unordinarydays.tistory.com/
+https://dydtjr1128.gitbook.io/understanding-docker/
+https://www.egovframe.go.kr/home/sub.do?menuNo=66
+https://devbox.tistory.com/entry/Java-static
+https://hodongman.github.io/2019/11/30/Java-Finalize().html
+https://hodongman.github.io/2021/04/16/Apache-Kafka.html
+https://eblee-repo.tistory.com/38
+https://docs.google.com/spreadsheets/d/1UZCUZzs4vqAnZalHF1cfttJJ4FL1HKcHTd9vIllyLLI/edit#gid=1295768713
+https://widevery.tistory.com/32
+https://redbinalgorithm.tistory.com/589
+https://www.lainyzine.com/ko/article/a-complete-guide-to-how-to-install-docker-desktop-on-windows-10/
+https://www.lainyzine.com/ko/subject/docker/
+https://www.44bits.io/ko/post/easy-deploy-with-docker
+https://blog.d0ngd0nge.xyz/docker-dockerfile-write/
+https://milkoon1.tistory.com/62
+https://www.sharedit.co.kr/posts/1475
