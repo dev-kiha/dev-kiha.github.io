@@ -1,7 +1,13 @@
 ---
 layout: post
 title:  "문자열 인코딩"
-date:   2021-09-30 23:45:27 +0900
+date:   2021-10-12 23:45:27 +0900
 categories: etc 
 ---
-
+#문자열인코딩이란?
+#아스키코드(ASCII)
+#EUC-KR(CP949)
+#유니코드(UTF-8, UTF-16, UTF-32)
+#UTF-8
+#UTF-16
+#마치며
