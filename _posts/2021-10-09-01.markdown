@@ -122,6 +122,7 @@ git reset — soft HEAD^
 git reset — merge
 merge 취소하기
 
+
 git reset — hard HEAD && git pull  git 코드 강제로 모두 받아오기
 
 git reset --hard HEAD 머지하기이전상태로 모두되돌림
