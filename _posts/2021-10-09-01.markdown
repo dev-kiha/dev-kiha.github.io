@@ -118,7 +118,6 @@ git reset HEAD [-- filesName] stage에 있는 파일 내리기
 git reset — soft HEAD^
 코드는 살리고 commit만 취소하기
 
-
 git reset — merge
 merge 취소하기
 
