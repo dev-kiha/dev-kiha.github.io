@@ -136,7 +136,6 @@ git reset --[hard] [mixed] [soft]
 git reset --hard 커밋된 파일빼고 모두삭제
 git clean -df 커밋,stage 되지 않은 파일 폴더 모두삭제 [untrack 중인] (매우 유용)
 
-
 -- 유용한명령어들
 
 git add .
