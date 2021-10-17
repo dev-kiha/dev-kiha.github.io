@@ -173,5 +173,4 @@ git stash drop[stash@[숫자]] : stash를 따로 지정하지 않으면 최신�
   즉, git stash pop은 한번 불러오면 stash 목록에 저장한 시점이 삭제되어있고 git stash apply는 해당 stash를 불러와도 여전히 list에 남아 있음.
 
 
-
 >https://unordinarydays.tistory.com/161
