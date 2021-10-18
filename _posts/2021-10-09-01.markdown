@@ -72,7 +72,6 @@ $ git rebase master experiment
 
 - 브랜치의 변경사항을 순서대로 다른 브랜치에 적용하면서 합병
 
-
 ##장점
 
 - 브랜치 컨텍스트 유지
