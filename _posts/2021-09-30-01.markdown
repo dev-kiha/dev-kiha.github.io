@@ -4,8 +4,6 @@ title:  "오늘 참고하여 공부/정리할 내용들"
 date:   2021-09-30 23:45:27 +0900
 categories: etc 
 ---
-https://wikidocs.net/book/922
-https://www.boostcourse.org/opencourse
 https://www.jetbrains.com/help/idea/getting-started.html
 https://github.com/webtutsplus
 https://egovframe.go.kr/home/faqinfo/faqinfoRead.do?menuNo=68&faqId=FAQ_0000000000000761
