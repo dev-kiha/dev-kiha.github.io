@@ -13,6 +13,12 @@ categories: sql-level-up
     불명한 데이터를 공란으로 표시한다(NULL)
     
 2.WHERE 구
+    특정조건에 맞는 일부 레코드만 선택하고 싶을때 사용(=필터조건)
+    WHERE는 '어디?'라는 의문사가 아닌 '~라는 경우'를 나타내는 관계부사
+    
+###WHERE 구의 다양한 조건 지정
+
+    
 3.GROUP BY 구
 4.HAVING 구
 5.ORDER BY 구
