@@ -8,8 +8,10 @@ categories: sql-level-up
 검색을 위해 사용하는 SQL구문을 SELECT 구문이라고 함.
 
 1.SELECT 구와 FROM 구
-    FROM을 반드시 입력해야 하는 것은 아니다 (SELECT 1 과 같이 상수를 선택하는 경우)
-
+    FROM을 반드시 입력해야 하는 것은 아니다 (SELECT 1 과 같이 상수를 선택하는 경우, 오라클은 예외)
+    SELECT 구문에는 데이터를 어떤 방법으로 선택할지 일절 쓰여있지 않다(=절차지향)
+    불명한 데이터를 공란으로 표시한다(NULL)
+    
 2.WHERE 구
 3.GROUP BY 구
 4.HAVING 구
