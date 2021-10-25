@@ -27,7 +27,14 @@ WHERE ... IN ('A','B','C')
 IS NULL, IS NOT NULL (NULL은 데이터값이 아니므로 연산자를 쓸 수 없다)
 
 3.GROUP BY 구
+홀케이크를 '칼'을 이용해 나누어 먹는다 == 테이블을 'GROUP BY'를 사용해 다룬다
+SQL의 대표적인 집계 함수 (COUNT,SUM,AVG,MAX,MIN)
+'GROUP BY ()' -> 키를 지정하지 않는다(생략과 동일, 지원하지 않는 DBMS가 많음)
 
 4.HAVING 구
+HAVING 구를 사용하면 선택한 결과 집합에 또다시 조건을 지정
+(WHERE가 '레코드'에 조건을 지정한다면, HAVING 구는 '집합'에 조건을 지정하는 기능)
+
 5.ORDER BY 구
+ORDER BY를 지정하지 않으면 엉터리로 지정한다
 6.뷰와 서브쿼리
