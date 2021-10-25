@@ -41,3 +41,10 @@ DESC -> Descending Order
 ASC -> Ascending Order
 
 6.뷰와 서브쿼리
+뷰는 데이터를 보유하지 않고 SELECT구문을 저장만 함
+###익명 VIEW
+뷰는 SELECT 구문이 중첩되어 있는 구조
+FROM 구에 직접 지정하는 SELECT 구문을 서브쿼리(subquery)라고 부름
+###서브쿼리를 사용한 편리한 조건 지정
+IN 내부에서 서브쿼리 사용
+(내부적으로는 서브쿼리를 전개해서 실행)
