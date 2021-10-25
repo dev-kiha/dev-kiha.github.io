@@ -37,4 +37,7 @@ HAVING 구를 사용하면 선택한 결과 집합에 또다시 조건을 지정
 
 5.ORDER BY 구
 ORDER BY를 지정하지 않으면 엉터리로 지정한다
+DESC -> Descending Order
+ASC -> Ascending Order
+
 6.뷰와 서브쿼리
