@@ -17,9 +17,17 @@ categories: sql-level-up
     WHERE는 '어디?'라는 의문사가 아닌 '~라는 경우'를 나타내는 관계부사
     
 ###WHERE 구의 다양한 조건 지정
+다양한 연산자(=,<>,>=,>,<=,<)
 
-    
+###WHERE 구는 거대한 벤다이어그램
+AND...OR...
+###IN으로 OR조건을 간단하게 작성
+WHERE ... IN ('A','B','C')
+###NULL-아무것도 아니라는 것은 무엇일까?
+IS NULL, IS NOT NULL (NULL은 데이터값이 아니므로 연산자를 쓸 수 없다)
+
 3.GROUP BY 구
+
 4.HAVING 구
 5.ORDER BY 구
 6.뷰와 서브쿼리
