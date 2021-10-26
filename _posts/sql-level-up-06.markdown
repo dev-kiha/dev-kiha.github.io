@@ -4,6 +4,7 @@ title:  "06.SELECT 구문"
 date:   2021-10-25 23:45:27 +0900
 categories: sql-level-up 
 ---
+
 #검색
 데이터베이스를 이용할떄 핵심 처리 (==질의, 추출)
 
