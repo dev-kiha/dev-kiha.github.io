@@ -4,4 +4,87 @@ title:  "많은 if 블럭을 피하는 방법"
 date:   2021-11-01 23:45:27 +0900
 categories: java 
 ---
-https://dzone.com/articles/avoiding-many-if-blocks
+## Problems
+In web development we may face the case that we have to write code to validate the parameter sent from client is satisfied all conditions we defined for that parameter. One strait forward solution that we may think is as example below:
+```java
+public void register(String email, String name, int age) {
+  String EMAIL_PATTERN = 
+  "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"
+  + "+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
+  Pattern pattern = Pattern.compile(EMAIL_PATTERN);
+  List<String> forbiddenDomains = Arrays.asList("domain1", "domain2");
+  if ( email == null || email.trim().equals("")){
+    throw new IllegalArgumentException("Email should not be empty!");
+  }
+  if ( !pattern.matcher(email).matches()) {
+    throw new IllegalArgumentException("Email is not a valid email!");
+  }
+  if ( forbiddenDomains.contains(email)){
+    throw new IllegalArgumentException("Email belongs to a forbidden email");
+  }
+  if ( name == null || name.trim().equals("")){
+    throw new IllegalArgumentException("Name should not be empty!");
+  }
+  if ( !name.matches("[a-zA-Z]+")){
+    throw new IllegalArgumentException("Name should contain only characters");
+  } 
+  if ( age <= 18){
+    throw new IllegalArgumentException("Age should be greater than 18");
+  }
+  // More code to do the actual registration
+}
+```
+This code looks bad and hard to maintain. It's also hard to extend if we need to check condition to another place, we need to rewrite it again or refactor it to a helper class to use it. So the main question is:
+1. How to write rule check code in a generic way?
+2. The solution can be extended or reuse without rewriting the code.
+## Solution
+### Using a rule check interface
+```java
+public interface RegistrationRule{
+  void validate(RegistrationData regData);
+}
+```
+### Implement Rule check interface
+We now define a rule class for email validation call EmailValidationRule that implements interface RegistrationRule
+```java
+public class EmailValidatationRule implements RegistrationRule{
+  private static final String EMAIL_PATTERN = 
+  "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"
+  + "+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
+  private final Pattern pattern = Pattern.compile(EMAIL_PATTERN);
+  @Override
+  public void validate(RegistrationData regData) {
+    if ( !pattern.matcher(regData.email).matches()) {
+      throw new IllegalArgumentException("Email is not a valid email!");
+    }
+  }
+}
+```
+Then we can define and implement another rules for email validation like EmailEmptinessRule, ForbiddenEmailDomainsRule, NameEmptinessRule, AlphabeticNameRule.
+### Put validation code in a RuleFactory class then get it when we need
+```java
+public class RuleSetFactory {
+  public static List<RegistrationRule> getEmailValidationRuleSet(){
+    List<RegistrationRule> rules = new ArrayList<>();
+    rules.add(new EmailValidatationRule());
+    rules.add(new EmailEmptinessRule());
+    rules.add(new ForbiddenEmailDomainsRule());
+    rules.add(new NameEmptinessRule());
+    rules.add(new AlphabeticNameRule());
+    return rules;
+  }
+}
+```
+Then we get the rule set from RuleSetFactory and validate our object
+```java
+List<RegistrationRule> rules = RuleSetFactory.getEmailValidationRuleSet();
+for(RegistrationRule rule:rules){
+  rule.validate(regData);
+}
+```
+### More
+- We now can create as many rule and rule set as we want and reuse the rule whenever we want.
+- We can combine with `try{} catch(){}` block to process the exception before return the validation result before return the details information to client due to security reason.
+- To apply Dependency Injection we can change to not use the `static` modifier in `RuleSetFactory` class methods, we add `@Singleton`, `@RequestScope` and `@Inject` instance of `RuleSetFactory` in the class we need.
+## Reference
+- https://dzone.com/articles/avoiding-many-if-blocks
