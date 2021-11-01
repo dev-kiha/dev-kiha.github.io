@@ -6,6 +6,7 @@ categories: java
 ---
 
 https://meetup.toast.com/posts/223
+https://pjh3749.tistory.com/248
 
 ## Problems
 In web development we may face the case that we have to write code to validate the parameter sent from client is satisfied all conditions we defined for that parameter. One strait forward solution that we may think is as example below:
