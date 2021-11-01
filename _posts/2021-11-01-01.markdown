@@ -4,6 +4,9 @@ title:  "많은 if 블럭을 피하는 방법"
 date:   2021-11-01 23:45:27 +0900
 categories: java 
 ---
+
+https://meetup.toast.com/posts/223
+
 ## Problems
 In web development we may face the case that we have to write code to validate the parameter sent from client is satisfied all conditions we defined for that parameter. One strait forward solution that we may think is as example below:
 ```java
