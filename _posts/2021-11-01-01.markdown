@@ -15,7 +15,6 @@ https://plas.tistory.com/139
 https://rok93.tistory.com/entry/Chap09-%EB%A6%AC%ED%8C%A9%ED%84%B0%EB%A7%81-%ED%85%8C%EC%8A%A4%ED%8C%85-%EB%94%94%EB%B2%84%EA%B9%85
 
 
-
 ## Problems
 In web development we may face the case that we have to write code to validate the parameter sent from client is satisfied all conditions we defined for that parameter. One strait forward solution that we may think is as example below:
 ```java
