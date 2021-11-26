@@ -58,6 +58,7 @@ ORDER BY를 지정하지 않으면 엉터리로 지정한다
 
 
 
+
 ###익명 VIEW
 뷰는 SELECT 구문이 중첩되어 있는 구조
 FROM 구에 직접 지정하는 SELECT 구문을 서브쿼리(subquery)라고 부름
